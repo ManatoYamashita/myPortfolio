@@ -1,36 +1,77 @@
 @charset "UTF-8";
 
+/* 
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
 /* Resposive support. */
 @media screen and (max-width:770px) {
+  body {
+    width: 130% !important;
+  }
   nav {
-    padding: 0;
-    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
   }
   nav ul {
-    display: block;
+    justify-content: center !important;
+    padding: 0px !important;
+  }
+  nav ul li {
+    font-size: x-small !important;
   }
   nav li.has-child ul {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Be controled by JavaScript. */
+    width: 85% !important;
     visibility: visible;
     opacity: 1;
-    display: none;
-    transition: none;
+    transition: .3s;
   }
-  nav ul li.has-child::before {
-    left: 20px;
+  nav ul ul li {
+    padding-left: 0px !important;
+    font-size: small;
   }
-  nav ul li.has-child.active::before {
-    transform: rotate(-45deg);
+  h2#ca1 {
+    font-size: 30px !important;
+    padding-top: 15% !important;
+  }
+  #main,
+  #content1,
+  #content2,
+  #foot {
+    height: 120% !important;
+  }
+
+  h2#ca2,
+  h2#ca3,
+  h2#ca4,
+  h2#ca6 {
+    font-size: 60px !important;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  div.footer_contents ul,
+  div.footer_contents li.has-child ul {
+    list-style: none;
+    font-size: 12px !important;
+  }
+  div#footer_img1 {
+    display: none !important;
+  }
+  div#footer_img2 {
+    display: block !important;
+  }
+  div#icons {
+    padding-top: 50px !important;
+    font-size: 150% !important;
   }
 }
-html,body { height:100%; margin:0; }
+
+html,body { height:100%; width:100%; margin:0; position:relative; background-color:#f7f7f7;}
 
 header {
-  height: 20%;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
 }
 a {
@@ -38,27 +79,42 @@ a {
     color: black;
     padding: 5px;
 }
-body {
-  padding-left: 10px;
+div#wrap {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 100%;
 }
 h1 {
     font-family: 'Raleway', sans-serif;
     color: rgb(45, 45, 43);
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
+    margin: 0%;
+    padding-top: 10px;
+    width: 100%;
 }
 
 /* for navigation menu */
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 nav {
-    color: white;
-    text-align: right;
-    width: 95%;
+  text-align: center;
+  font-family: 'M PLUS 1p', sans-serif;
+  width: 95%;
 }
 nav ul {
   list-style: none;
   display: flex;
   justify-content: right;
   padding-right: 35px;
+  border-bottom: solid 1px #B0B0B0;
+  margin: 0%;
+  width: 100%;
 }
 nav ul ul {
   text-align: left;
@@ -83,7 +139,12 @@ nav ul li li a {
   padding: 10px 20px;
 }
 nav ul li a:hover {
-  color:rgb(45, 45, 43);
+  color: #a22041;
+  font-style: 300;
+  font-size: larger;
+}
+nav ul li ul li a:hover {
+  color: #a22041;
 }
 
 nav ul li.has-child::before {
@@ -133,8 +194,9 @@ nav li.has-child ul li a {
 
 #main {
   padding: 0px;
-  height: 80%;
+  height: 100%;
   width: 100%;
+  text-align: center;
 }
 h2#ca1 {
   text-align: center;
@@ -144,7 +206,7 @@ h2#ca1 {
   padding: 80px;
   color: rgb(59, 59, 59);
   padding-bottom: 0px;
-  padding-top: 40px;
+  padding-top: 10%;
 }
 h2#ca2 {
   text-align: center;
@@ -152,7 +214,6 @@ h2#ca2 {
   font-size: 120px;
   color:rgb(59, 59, 59);
   margin-top: 0px;
-  font-style: bold;
   padding-bottom: 100px;
 }
 
@@ -175,7 +236,7 @@ h2#ca3 {
   font-size: larger;
   box-sizing: border-box;
   margin: 0px;
-  color: rgb(59, 59, 59);
+  color: rgb(90, 90, 90);
 }
 
 div#content2 {
@@ -188,6 +249,7 @@ div#content2 {
   font-family: sans-serif;
   font-size: 50px;
   padding-top: 30px;
+  padding-left: 15px;
   margin: 0px;
   color: rgb(59, 59, 59);
 }
@@ -195,6 +257,13 @@ div#contentsWrap {
   box-sizing: border-box;
   height: 80%;
   padding: 10px;
+}
+i.cont_icons {
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 650%;
+  width: 100%;
+  text-align: center;
 }
 
 section {
@@ -233,6 +302,8 @@ div#foot {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  color: rgb(233, 233, 233);
+  background-color:#3c3c3c;
 }
 aside {
   box-sizing: border-box;
@@ -251,19 +322,30 @@ footer {
 }
 div#content3 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 h2#ca6 {
   padding-top: 80px;
   font-size: 200%;
+  padding-left: 10px;
+}
+div.footer_contents ul li a {
+  color: rgb(230, 230, 230);
 }
 div.footer_contents ul,
 div.footer_contents li.has-child ul {
   list-style: none;
-  font-size: 15px;
+  font-size: 16px;
 }
-div#sns_icons {
+div#footer_img2 {
+  display: none;
+}
+
+div#icons {
+  justify-content: center;
+  padding-top: 30px;
   text-align: center;
-  height: auto;
+  vertical-align: middle;
+  font-size: 250%;
 }
