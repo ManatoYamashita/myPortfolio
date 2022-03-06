@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 /* 
-font-family: 'M PLUS 1p', sans-serif;
-font-family: 'Raleway', sans-serif;
+font-family: 'Asap', sans-serif;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Kiwi Maru', serif;
+font-family: 'M PLUS 2', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Righteous', cursive;
 */
 
 /* Resposive support. */
@@ -21,6 +25,9 @@ font-family: 'Raleway', sans-serif;
   }
   nav ul li {
     font-size: x-small !important;
+  }
+  nav ul li #lang {
+    display: none !important;
   }
   nav li.has-child ul {
     width: 85% !important;
@@ -86,7 +93,7 @@ div#wrap {
   height: 100%;
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Asap', sans-serif;
     color: rgb(45, 45, 43);
     font-size: 30px;
     padding-left: 10px;
@@ -110,7 +117,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
   padding-right: 35px;
   border-bottom: solid 1px #B0B0B0;
   margin: 0%;
@@ -200,7 +207,8 @@ nav li.has-child ul li a {
 }
 h2#ca1 {
   text-align: center;
-  font-family: 'Raleway', 'suns-serif';
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: lighter;
   font-size: 60px;
   margin: 0px;
   padding: 80px;
@@ -210,8 +218,9 @@ h2#ca1 {
 }
 h2#ca2 {
   text-align: center;
-  font-family: 'Raleway', 'suns-serif';
-  font-size: 120px;
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: lighter;
+  font-size: 100px;
   color:rgb(59, 59, 59);
   margin-top: 0px;
   padding-bottom: 100px;
@@ -222,14 +231,16 @@ div#content1 {
   height: 100%;
 }
 h2#ca3 {
-  font-family: sans-serif;
-  font-size: 100px;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 80px;
   padding: 40px;
   margin: 0px;
   color: rgb(59, 59, 59);
 }
 
 #content1 p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bolder;
   display: block;
   text-align: left;
   padding: 30px;
@@ -280,6 +291,11 @@ section {
   width: 100%;
   padding: 20px 30px;
 }
+.cont a:hover{
+  color: #a22041;
+  font-size: 103%;
+  transition: .3s;
+}
 h3.ca5 {
   text-align: center;
   margin: 0px;
@@ -294,6 +310,7 @@ p.icons {
   height: auto;
 }
 p.sub {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: small;
   width: 100%;
 }
@@ -332,6 +349,7 @@ h2#ca6 {
   padding-left: 10px;
 }
 div.footer_contents ul li a {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   color: rgb(230, 230, 230);
 }
 div.footer_contents ul,
@@ -339,6 +357,12 @@ div.footer_contents li.has-child ul {
   list-style: none;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+}
+div.footer_contents ul a:hover,
+div.footer_contents li.has-child ul a:hover {
+  font-size: 110%;
+  color: #a22041;
+  transition: .3s;
 }
 div#footer_img2 {
   display: none;
@@ -350,4 +374,9 @@ div#icons {
   text-align: center;
   vertical-align: middle;
   font-size: 250%;
+}
+div#icons a:hover {
+  color: #a22041;
+  font-size: 140%;
+  transition: .3s;
 }

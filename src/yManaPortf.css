@@ -23,6 +23,9 @@ font-family: 'Raleway', sans-serif;
   nav ul li {
     font-size: x-small !important;
   }
+  nav ul li #lang {
+    display: none !important;
+  }
   nav li.has-child ul {
     width: 85% !important;
     visibility: visible;
@@ -281,6 +284,11 @@ section {
   width: 100%;
   padding: 20px 30px;
 }
+.cont a:hover{
+  color: #a22041;
+  font-size: 103%;
+  transition: .3s;
+}
 h3.ca5 {
   text-align: center;
   margin: 0px;
@@ -341,6 +349,12 @@ div.footer_contents li.has-child ul {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
+div.footer_contents ul a:hover,
+div.footer_contents li.has-child ul a:hover {
+  font-size: 110%;
+  color: #a22041;
+  transition: .3s;
+}
 div#footer_img2 {
   display: none;
 }
@@ -351,4 +365,9 @@ div#icons {
   text-align: center;
   vertical-align: middle;
   font-size: 250%;
+}
+div#icons a:hover {
+  color: #a22041;
+  font-size: 140%;
+  transition: .3s;
 }
