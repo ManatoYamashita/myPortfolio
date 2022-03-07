@@ -293,7 +293,6 @@ section {
 }
 .cont a:hover{
   color: #a22041;
-  font-size: 103%;
   transition: .3s;
 }
 h3.ca5 {
@@ -377,6 +376,5 @@ div#icons {
 }
 div#icons a:hover {
   color: #a22041;
-  font-size: 140%;
   transition: .3s;
 }
