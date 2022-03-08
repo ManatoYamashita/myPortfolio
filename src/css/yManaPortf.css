@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* 
+font-family: 'Comfortaa', cursive;
 font-family: 'M PLUS 1p', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
@@ -21,6 +22,9 @@ font-family: 'Raleway', sans-serif;
   }
   nav ul li {
     font-size: x-small !important;
+  }
+  nav ul li #lang {
+    display: none !important;
   }
   nav li.has-child ul {
     width: 85% !important;
@@ -280,6 +284,10 @@ section {
   width: 100%;
   padding: 20px 30px;
 }
+.cont a:hover {
+  color: #a22041;
+  transition: .3s;
+}
 h3.ca5 {
   text-align: center;
   margin: 0px;
@@ -296,6 +304,30 @@ p.icons {
 p.sub {
   font-size: small;
   width: 100%;
+}
+
+div#content3 {
+  display: block;
+  height: 100%;
+  text-align: end;
+}
+h2#ca6 {
+  font-family: sans-serif;
+  font-size: 70px;
+  padding: 40px;
+  padding-top: 170px;
+  margin: 0px;
+  color: rgb(59, 59, 59);
+}
+#content3 p {
+  display: block;
+  width: 60%;
+  text-align: left;
+  padding: 30px;
+  font-size: larger;
+  box-sizing: border-box;
+  margin: 0px;
+  color: rgb(90, 90, 90);
 }
 
 div#foot {
@@ -321,12 +353,12 @@ footer {
   width: 100%;
   padding-left: 5px;
 }
-div#content3 {
+div#content4 {
   display: flex;
   justify-content: flex-start;
 }
 
-h2#ca6 {
+h2#ca7 {
   padding-top: 80px;
   font-size: 200%;
   padding-left: 10px;
@@ -340,6 +372,12 @@ div.footer_contents li.has-child ul {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
+div.footer_contents ul a:hover,
+div.footer_contents li.has-child ul a:hover {
+  font-size: 110%;
+  color: #a22041;
+  transition: .3s;
+}
 div#footer_img2 {
   display: none;
 }
@@ -350,4 +388,65 @@ div#icons {
   text-align: center;
   vertical-align: middle;
   font-size: 250%;
+}
+div#icons a:hover {
+  color: #a22041;
+  transition: .3s;
+}
+
+.delay-time02{
+  animation-delay: 0.2s;
+} 
+.delay-time04{
+  animation-delay: 0.4s;
+}
+.delay-time06{
+  animation-delay: 0.6s;
+}
+.delay-time08 {
+  animation-delay: 0.8s;
+}
+.delay-time10 {
+  animation-delay: 1.0s;
+}
+.delay-time12 {
+  animation-delay: 1.2s;
+}
+
+.animeS{
+	opacity: 0;
+}
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.fadeDown {
+  animation-name: fadeDownAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
