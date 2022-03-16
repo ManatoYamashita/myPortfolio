@@ -8,8 +8,8 @@ font-family: 'Raleway', sans-serif;
 
 /* Resposive support. */
 @media screen and (max-width:770px) {
-  body {
-    width: 130% !important;
+  html, body {
+    width: 100vh !important;
   }
   nav {
     padding: 0px !important;
@@ -22,9 +22,6 @@ font-family: 'Raleway', sans-serif;
   }
   nav ul li {
     font-size: x-small !important;
-  }
-  nav ul li #lang {
-    display: none !important;
   }
   nav li.has-child ul {
     width: 85% !important;
@@ -46,7 +43,9 @@ font-family: 'Raleway', sans-serif;
   #foot {
     height: 120% !important;
   }
-
+  #content3 p {
+    width: 100% !important;
+  }
   h2#ca2,
   h2#ca3,
   h2#ca4,
@@ -71,8 +70,7 @@ font-family: 'Raleway', sans-serif;
     font-size: 150% !important;
   }
 }
-
-html,body { height:100%; width:100%; margin:0; position:relative; background-color:#f5f5f5;}
+html,body { height:100%; width:100%; margin:0; position:relative; background-color:#f5f5f5; }
 
 header {
   background-color: rgba(255, 255, 255, 0.9);
@@ -90,8 +88,7 @@ div#wrap {
   height: 100%;
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
-    color: rgb(45, 45, 43);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 30px;
     padding-left: 10px;
     margin: 0%;
@@ -132,7 +129,7 @@ nav ul li a {
   display: block;
   text-decoration: none;
   color:rgb(45, 45, 43);
-  padding: 20px 30px;
+  padding: 20px 25px;
   transition: all .3s;
 }
 nav ul li li {
@@ -204,7 +201,7 @@ nav li.has-child ul li a {
 }
 h2#ca1 {
   text-align: center;
-  font-family: 'Raleway', 'suns-serif';
+  font-family: 'Raleway', suns-serif;
   font-size: 60px;
   margin: 0px;
   padding: 80px;
@@ -214,7 +211,7 @@ h2#ca1 {
 }
 h2#ca2 {
   text-align: center;
-  font-family: 'Raleway', 'suns-serif';
+  font-family: 'Raleway', suns-serif;
   font-size: 120px;
   color:rgb(59, 59, 59);
   margin-top: 0px;

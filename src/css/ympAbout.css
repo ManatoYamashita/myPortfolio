@@ -5,15 +5,17 @@
 font-familys
     font-family: 'Asap', sans-serif;
     font-family: 'Fredoka', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;   日本語対応
+    font-family: 'M PLUS Rounded 1c', sans-serif;   日本語対応
     font-family: 'Righteous', cursive;
+    font-family: 'Kosugi Maru', sans-serif; 日本語対応
 */
 
 /* Resposive support. */
 @media screen and (max-width:770px) {
+    html,
     body {
-      width: 130% !important;
+      width: 90vh !important;
     }
     nav {
       padding: 0px !important;
@@ -27,9 +29,6 @@ font-familys
     nav ul li {
       font-size: x-small !important;
     }
-    nav ul li #lang {
-      display: none !important;
-    }
     nav li.has-child ul {
       width: 85% !important;
       visibility: visible;
@@ -40,8 +39,31 @@ font-familys
       padding-left: 0px !important;
       font-size: small;
     }
+    div#wrap_conts {
+        text-align: center;
+        width: 100%;
+        margin-left: auto !important;
+    }
     div#wrap_profile {
+        width: 100%;
         display: block !important;
+    }
+    .colum {
+        height: 100%;
+    }
+    div#content2,
+    div#content3 {
+        width: 70% !important;
+        margin: 30px auto !important;
+    }
+    div#foot {
+        width: max-content !important;
+        background-size: cover !important;
+    }
+    table {
+        margin: 0px auto;
+        text-align: start;
+        padding: 20px;
     }
 }
 
@@ -65,7 +87,6 @@ div#wrap {
 }
 h1 {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: rgb(45, 45, 43);
     font-size: 30px;
     padding-left: 10px;
     margin: 0%;
@@ -117,12 +138,13 @@ nav ul li li a {
   padding: 10px 20px;
 }
 nav ul li a:hover {
-  color: #a22041;
+  color: #355c78;
   font-style: 300;
   font-size: larger;
+  font-weight: bolder;
 }
 nav ul li ul li a:hover {
-  color: #a22041;
+  color: #355c78;
 }
 
 nav ul li.has-child::before {
@@ -183,14 +205,14 @@ div#content1 {
     padding: 10px;
 }
 h2 {
-    font-family: 'Asap', sans-serif;
-    color: #3c3c3c;
+    font-family: 'Asap', 'Kosugi Maru', serif;
+    color: #355c78;
     font-size: 60px;
     padding-top: 20px;
 }
 h3 {
-    font-family: 'Asap', sans-serif;
-    color: #3c3c3c;
+    font-family: 'Asap', 'Kosugi Maru', sans-serif;
+    color: #355c78;
     font-size: 30px;
 }
 p {
@@ -218,7 +240,6 @@ div#content3 {
     box-shadow: 0 5px 10px 0 rgba(160, 160, 160, 0.5);
 }
 div#content2 table {
-    padding-bottom: 30px;
     color: #3c3c3c;
 }
 div#content2 img {
@@ -284,12 +305,12 @@ div#foot {
   div.footer_contents li.has-child ul {
     list-style: none;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
   }
   div.footer_contents ul a:hover,
   div.footer_contents li.has-child ul a:hover {
-    font-size: 110%;
-    color: #a22041;
+    font-weight: bolder;
+    color: #355c78;
     transition: .3s;
   }
   div#footer_img2 {
@@ -304,7 +325,7 @@ div#foot {
     font-size: 250%;
   }
   div#icons a:hover {
-    color: #a22041;
+    color: #355c78;
     transition: .3s;
   }
 
@@ -328,8 +349,8 @@ div#foot {
     animation-delay: 1.2s;
   }
   
-  .animeS{
-      opacity: 0;
+  .animeS {
+    opacity: 0;
   }
   .fadeUp {
     animation-name: fadeUpAnime;

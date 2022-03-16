@@ -11,8 +11,8 @@ font-family: 'Righteous', cursive;
 
 /* Resposive support. */
 @media screen and (max-width:770px) {
-  body {
-    width: 130% !important;
+  html, body {
+    width: 50vh !important;
   }
   nav {
     padding: 0px !important;
@@ -25,9 +25,6 @@ font-family: 'Righteous', cursive;
   }
   nav ul li {
     font-size: x-small !important;
-  }
-  nav ul li #lang {
-    display: none !important;
   }
   nav li.has-child ul {
     width: 85% !important;
@@ -49,7 +46,9 @@ font-family: 'Righteous', cursive;
   #foot {
     height: 120% !important;
   }
-
+  #content3 p {
+    height: 100% !important;
+  }
   h2#ca2,
   h2#ca3,
   h2#ca4,
@@ -146,11 +145,14 @@ nav ul li li a {
   padding: 10px 20px;
 }
 nav ul li a:hover {
+  border-bottom: solid 2px #a22041;
+  font-weight: bolder;
   color: #a22041;
   font-style: 300;
   font-size: larger;
 }
 nav ul li ul li a:hover {
+  border-bottom: solid 2px #a22041;
   color: #a22041;
 }
 
@@ -293,6 +295,7 @@ section {
   margin-bottom: 50px;
 }
 .cont a:hover{
+  font-weight: bolder;
   color: #a22041;
   transition: .3s;
 }
@@ -395,7 +398,7 @@ div.footer_contents li.has-child ul {
 }
 div.footer_contents ul a:hover,
 div.footer_contents li.has-child ul a:hover {
-  font-size: 110%;
+  font-weight: bolder;
   color: #a22041;
   transition: .3s;
 }
@@ -411,6 +414,8 @@ div#icons {
   font-size: 250%;
 }
 div#icons a:hover {
+  border-bottom: solid 2px #a22041;
+  font-weight: bolder;
   color: #a22041;
   transition: .3s;
 }
