@@ -1,0 +1,129 @@
+.hero {
+    position: relative;
+  }
+  
+  /* video */
+  
+  .video-box {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  /* overlay */
+  
+  .overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(221, 221, 221, .1);
+  }
+  
+  /* text */
+  
+  .text-box {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-weight: lighter;
+    font-size: small;
+    color: #575757;
+}
+/* Animation settings */
+.delay-time02{
+    animation-delay: 2s;
+  } 
+  .delay-time04{
+    animation-delay: 4s;
+  }
+  .delay-time06{
+    animation-delay: 6s;
+  }
+  .delay-time08 {
+    animation-delay: 8s;
+  }
+  .delay-time10 {
+    animation-delay: 10s;
+  }
+  .delay-time12 {
+    animation-delay: 12s;
+  }
+  
+  .animeS {
+    opacity: 0;
+  }
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  /* animations */
+  @keyframes var-animation {
+    from {
+      width: 0%;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeDownAnime {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -15,7 +15,7 @@ font-familys
 @media screen and (max-width:770px) {
     html,
     body {
-      width: 90vh !important;
+      width: 100% !important;
     }
     nav {
       padding: 0px !important;
@@ -23,8 +23,10 @@ font-familys
       width: 100% !important;
     }
     nav ul {
+      display: flex !important;
       justify-content: center !important;
       padding: 0px !important;
+      flex-wrap: wrap;
     }
     nav ul li {
       font-size: x-small !important;
@@ -51,22 +53,30 @@ font-familys
     .colum {
         height: 100%;
     }
+    p {
+        font-size: small;
+    }
     div#content2,
     div#content3 {
         width: 70% !important;
         margin: 30px auto !important;
     }
     div#foot {
-        width: max-content !important;
         background-size: cover !important;
+        height: auto !important;
+    }
+    div#content4 {
+        display: block !important;
     }
     table {
         margin: 0px auto;
         text-align: start;
         padding: 20px;
     }
+    div#foot div#icons {
+        font-size: larger !important;
+    }
 }
-
 
 html,body { height:100%; width:100%; margin:0; position:relative; background-color:#f5f5f5; }
 
@@ -78,12 +88,6 @@ a {
     text-decoration: none !important;
     color: black;
     padding: 5px;
-}
-div#wrap {
-  position: absolute;
-  top: 60px;
-  width: 100%;
-  height: 100%;
 }
 h1 {
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -104,7 +108,6 @@ header {
 nav {
   text-align: center;
   font-family: 'M PLUS 1p', sans-serif;
-  width: 95%;
 }
 nav ul {
   list-style: none;
@@ -113,7 +116,6 @@ nav ul {
   padding-right: 35px;
   border-bottom: solid 1px #B0B0B0;
   margin: 0%;
-  width: 100%;
 }
 nav ul ul {
   text-align: left;
@@ -193,6 +195,7 @@ nav li.has-child ul li a {
 }
 
 div#wrap_conts {
+    box-sizing: border-box;
     position: relative;
     top: 10%;
     padding: 10px;
@@ -251,6 +254,7 @@ div#content2 img {
 }
 div#outline {
     display: flex;
+    padding-bottom: 50px;
 }
 table tr td {
     font-family: 'Asap', sans-serif;
@@ -263,21 +267,33 @@ table tr td.index {
     font-family: monospace;
     color: #3c3c3c;
 }
+
+td#g01 {
+  width: 75%
+}
+div#blog_links a {
+    font-family: monospace;
+    font-weight: bolder;
+    color: #355c78;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
 div#foot {
     box-sizing: border-box;
     height: 100%;
-    width: 100%;
     color: rgb(233, 233, 233);
     background-color:#3c3c3c;
+    padding-left: 5px;
+    padding-bottom: 10px;
   }
   aside {
     box-sizing: border-box;
     text-align: left;
     height: 90%;
-    width: 100%;
     padding: 10px;
-    /* display: flex; */
-    /* justify-content: space-between; */
+    position: relative;
+    top: 10%;
   }
   footer {
     background-color: #3c3c3c;
@@ -285,8 +301,10 @@ div#foot {
     border-top: solid 1.5px #B0B0B0;
     box-sizing: border-box;
     height: 10%;
-    width: 100%;
     padding-left: 5px;
+  }
+  footer p {
+    color: #fff;
   }
   div#content4 {
     display: flex;
@@ -327,6 +345,11 @@ div#foot {
   div#icons a:hover {
     color: #355c78;
     transition: .3s;
+  }
+
+  footer p {
+      font-size: medium;
+      padding-left: 10px;
   }
 
 /* Animation settings */
