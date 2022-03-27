@@ -12,7 +12,7 @@ font-familys
 */
 
 /* Resposive support. */
-@media screen and (max-width:770px) {
+@media screen and (max-width:768px) {
     html,
     body {
       width: 100% !important;
@@ -69,6 +69,12 @@ font-familys
         margin: 0px auto;
         text-align: start;
         padding: 20px;
+    }
+    div#content4 a {
+      font-size: small !important;
+    }
+    div#icons {
+      font-size: larger !important;
     }
 }
 

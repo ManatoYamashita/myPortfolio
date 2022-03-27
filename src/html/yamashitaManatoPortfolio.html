@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="http://tmana.sub.jp/portfolio/dirs/src/css/normalize.css">
     <link rel="stylesheet" href="../css/yamashitaManatoPortfolio.css">
     <title>Yamashita Manato's Portfolio</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NS0T2PQDFS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NS0T2PQDFS');
+    </script>
 </head>
 <body>
     <section class="hero">
         <div class="video-box overlay">
-          <video class="video" muted autoplay playsinline onended="location.href='/Users/yamasitamana/OneDrive/ProgLanguages/HTML_CSS/portfolio/dirs/src/html/yManaPortf.html'">
-            <source src="../../images/opening.mp4" type="video/mp4">
+          <video class="video_pc" poster="http://tmana.sub.jp/portfolio/dirs/images/opening_poster.jpg
+          " muted autoplay playsinline loop onended="location.href='http://tmana.sub.jp/portfolio/dirs/src/html/yManaPortf.html'">
+            <source src="http://tmana.sub.jp/portfolio/dirs/images/opening.mp4" type="video/mp4">
+          </video>
+          <video class="video_mobile" poster="http://tmana.sub.jp/portfolio/dirs/images/opening_poster.jpg
+          " muted autoplay playsinline onended="location.href='http://tmana.sub.jp/portfolio/dirs/src/html/yManaPortf.html'">
+            <source src="http://tmana.sub.jp/portfolio/dirs/images/opening_mobile.mp4" type="video/mp4">
           </video>
         </div>
         <div class="text-box">
