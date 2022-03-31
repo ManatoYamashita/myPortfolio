@@ -12,7 +12,7 @@ font-familys
 */
 
 /* Resposive support. */
-@media screen and (max-width:770px) {
+@media screen and (max-width:768px) {
     html,
     body {
       width: 100% !important;
@@ -53,6 +53,9 @@ font-familys
     .colum {
         height: 100%;
     }
+    h2 {
+      font-size: 45px !important;
+    }
     p {
         font-size: small;
     }
@@ -75,6 +78,9 @@ font-familys
     }
     div#foot div#icons {
         font-size: larger !important;
+    }
+    div#content4 a {
+      font-size: small !important;
     }
 }
 
@@ -246,7 +252,7 @@ div#content2 table {
     color: #3c3c3c;
 }
 div#content2 img {
-    width: 300px;
+    width: 220px;
     height: 35%;
     /* triming */
     object-fit: cover;

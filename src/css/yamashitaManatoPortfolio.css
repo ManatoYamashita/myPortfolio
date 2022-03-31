@@ -1,3 +1,26 @@
+/* YAMASHITA MANATO's Portfolio */
+@charset "utf-8";
+
+@media screen and (max-width:780px) {
+  html,
+  body {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .video_pc {
+    display: none !important;
+  }
+  .video_mobile {
+    display: block !important;
+  }
+  div#skip, a {
+    top: 75%;
+    left: 75%;
+  }
+}
+
 .hero {
     position: relative;
   }
@@ -7,9 +30,12 @@
   .video-box {
     position: relative;
     overflow: hidden;
+    width: 100vw;
     height: 100vh;
+    background-color: #dedede;
   }
-  .video {
+  video.video_pc,
+  video.video_pc source {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,10 +46,25 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+  video.video_mobile,
+  video.video_mobile source {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    min-width: 90%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   
   /* overlay */
   
-  .overlay::after {
+ .overlay::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,15 +76,19 @@
   }
   
   /* text */
-  
-  .text-box {
+  div#skip i, a {
     position: absolute;
-    top: 95%;
+    font-size: 60px;
+    top: 45%;
     left: 50%;
-    width: 100%;
+    color: #3c3c3c;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  div#skip i,com a:hover {
+    font-size: 40px;
   }
   h1 {
     font-family: Roboto;
@@ -61,13 +106,14 @@ p {
     color: #575757;
 }
 /* Animation settings */
-.delay-time02{
+  .delay-time02{
     animation-delay: 2s;
   } 
   .delay-time04{
     animation-delay: 4s;
   }
   .delay-time06{
+    opacity: .6;
     animation-delay: 6s;
   }
   .delay-time08 {
@@ -103,7 +149,7 @@ p {
       opacity: 0;
     }
     to {
-      opacity: 1;
+      opacity: 0.6;
     }
   }
   @keyframes fadeUpAnime {
@@ -113,7 +159,7 @@ p {
     }
   
     to {
-      opacity: 1;
+      opacity: 0.6;
       transform: translateY(0);
     }
   }
