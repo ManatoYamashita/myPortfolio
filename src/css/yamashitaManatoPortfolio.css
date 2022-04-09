@@ -87,7 +87,11 @@
     transform: translate(-50%, -50%);
     z-index: 1;
   }
+<<<<<<< HEAD
   div#skip i, a:hover {
+=======
+  div#skip i,com a:hover {
+>>>>>>> 507e42e3053df1fc9b62b3a00190a9c9c54b27da
     font-size: 40px;
   }
   h1 {
