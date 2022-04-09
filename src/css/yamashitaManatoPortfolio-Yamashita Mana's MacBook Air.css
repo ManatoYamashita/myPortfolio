@@ -1,0 +1,176 @@
+/* YAMASHITA MANATO's Portfolio */
+@charset "utf-8";
+
+@media screen and (max-width:780px) {
+  html,
+  body {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .video_pc {
+    display: none !important;
+  }
+  .video_mobile {
+    display: block !important;
+  }
+  div#skip, a {
+    top: 75%;
+    left: 75%;
+  }
+}
+
+.hero {
+    position: relative;
+  }
+  
+  /* video */
+  
+  .video-box {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dedede;
+  }
+  video.video_pc,
+  video.video_pc source {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  video.video_mobile,
+  video.video_mobile source {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    min-width: 90%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  /* overlay */
+  
+ .overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(221, 221, 221, .1);
+  }
+  
+  /* text */
+  i {
+    position: absolute;
+    font-size: 80px;
+    top: 30%;
+    left: 50%;
+    color: #3c3c3c;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 80%;
+    z-index: 1;
+  }
+  a i:hover {
+    color: black;
+  }
+  h1 {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-weight: lighter;
+    font-size: small;
+    color: #575757;
+}
+/* Animation settings */
+  .delay-time02{
+    animation-delay: 2s;
+  } 
+  .delay-time04{
+    animation-delay: 4s;
+  }
+  .delay-time06{
+    opacity: .6;
+    animation-delay: 6s;
+  }
+  .delay-time08 {
+    animation-delay: 8s;
+  }
+  .delay-time10 {
+    animation-delay: 10s;
+  }
+  .delay-time12 {
+    animation-delay: 12s;
+  }
+  
+  .animeS {
+    opacity: 0;
+  }
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  /* animations */
+  @keyframes var-animation {
+    from {
+      width: 0%;
+      opacity: 0;
+    }
+    to {
+      opacity: 0.6;
+    }
+  }
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 0.6;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeDownAnime {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -41,23 +41,22 @@ font-familys
       padding-left: 0px !important;
       font-size: small;
     }
-    div#wrap_conts {
-        text-align: center;
-        width: 100%;
-        margin-left: auto !important;
-    }
-    div#wrap_profile {
-        width: 100%;
-        display: block !important;
+    main {
+      margin-top: 20%;
+      margin-bottom: 10%;
     }
     .colum {
         height: 100%;
     }
-    div#content2,
-    div#content3 {
-        width: 70% !important;
-        margin: 30px auto !important;
+    section {
+      flex-direction: column;
+      margin: 10% !important;
+      width: 70% !important;
     }
+    img {
+      width: 70% !important;
+      height: 100% !important;
+  }
     div#foot {
         background-size: cover !important;
         height: auto !important;
@@ -140,13 +139,13 @@ nav ul li li a {
   padding: 10px 20px;
 }
 nav ul li a:hover {
-  color: #D9C152;
+  color: darkgreen;
   font-style: 300;
   font-size: larger;
   font-weight: bolder;
 }
 nav ul li ul li a:hover {
-  color: #D9C152;
+  color: darkgreen;
 }
 
 nav ul li.has-child::before {
@@ -206,8 +205,69 @@ main {
     padding: 3%;
     padding-top: 10%;
   }
+article {
+  width: 80%;
+  margin: 10%;
+}
+section {
+  background-color: rgb(237, 237, 237);
+  box-shadow: 10px 10px 5px #B0B0B0;
+  border-radius: 30px;
 
+  padding: 20px;
+  margin: 6% 0;
+  display: flex;
+}
+section#part_book {
+  width: 70%;
+  flex-direction: column;
+  margin-right: 10%;
+}
+section#part_anime {
+  width: 80%;
+  margin-left: 10%;
+}
+section#part_illus {
+  width: 70%;
+  margin-right: 10%;
+}
 
+#part_book img {
+  height: auto;
+  width: 70%;
+  padding: 20px;
+  border-radius: 60px;
+}
+#part_anime img {
+  width: 40%;
+  height: auto;
+  padding-left: 20px;
+  border-radius: 45px;
+}
+#part_illus img {
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 60px;
+}
+h2 {
+  font-family: 'Asap', sans-serif;
+  font-size: 50px;
+  color: darkgreen;
+}
+h3 {
+  font-family: 'Asap', sans-serif;
+  font-size: 40px;
+  color: darkgreen;
+  padding-right: 30px;
+}
+p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+section p {
+  font-size: small;
+  height: 100%;
+}
 
 
 div#foot {
@@ -257,7 +317,7 @@ div#foot {
   div.footer_contents ul a:hover,
   div.footer_contents li.has-child ul a:hover {
     font-weight: bolder;
-    color: #D9C152;
+    color: darkgreen;
     transition: .3s;
   }
   div#footer_img2 {
@@ -272,7 +332,7 @@ div#foot {
     font-size: 250%;
   }
   div#icons a:hover {
-    color: #D9C152;
+    color: darkgreen;
     transition: .3s;
   }
 
