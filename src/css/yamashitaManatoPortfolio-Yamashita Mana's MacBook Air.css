@@ -76,23 +76,20 @@
   }
   
   /* text */
-  div#skip i, a {
+  i {
     position: absolute;
-    font-size: 60px;
-    top: 45%;
+    font-size: 80px;
+    top: 30%;
     left: 50%;
     color: #3c3c3c;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    padding-bottom: 80%;
     z-index: 1;
   }
-<<<<<<< HEAD
-  div#skip i, a:hover {
-=======
-  div#skip i,com a:hover {
->>>>>>> 507e42e3053df1fc9b62b3a00190a9c9c54b27da
-    font-size: 40px;
+  a i:hover {
+    color: black;
   }
   h1 {
     font-family: Roboto;
