@@ -1,4 +1,7 @@
 # myPortfolio
+
+> https://manatoyamashita.github.io/myPortfolio/src/html/index.html/
+
 This repository is for my portfolio site, the goal is improve myskills. so to speak it's for practice.
 
 # Portfolio of Manato Yamashita
